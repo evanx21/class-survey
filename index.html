@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Survey</title>
+</head>
+
+<body>
+    <h1>Our Front-End Development Experience</h1>
+
+    <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById("myChart");
+
+        new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["Beginner", "Intermediate", "Advanced"],
+                datasets: [{
+                    label: "Number of Students",
+                    data: [30, 19, 4]
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>
